@@ -1,0 +1,74 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+struct node
+{
+    int info;
+    struct node *link;
+};
+
+typedef struct node* NODE;
+
+NODE insert_front(int item, NODE first)
+{
+    NODE newnode;
+    newnode = (NODE)malloc(sizeof(struct node));
+    if(newnode = NULL)
+    {
+        printf("out of memory\n");
+        exit(1);
+    }
+    newnode->info=item;
+    newnode->link=first;
+    return newnode;
+    
+}
+
+int display(NODE first)
+{
+    NODE temp;
+    if(first == NULL)
+    {
+        printf("\nlist empty");
+        return 0;
+        
+    }
+    printf("\nthe contents of the list are");
+    temp=first;
+    while(temp!=NULL)
+    {
+        printf("%d\t",temp->info);
+        temp=temp->link;
+        
+    }
+}
+
+int main()
+{
+    NODE first = NULL;
+    int input, item;
+    for(;;)
+    {
+        printf("\n1 to insert front");
+        printf("\n2 to display the list contents");
+        printf("\n3 to exit");
+        printf("\nenter the input choice");
+        scanf("%d",&input);
+        switch(input)
+        {
+            case 1: printf("\nenter the item to be inserted: ");
+                    scanf("%d",&item);
+                    first=insert_front(item,first);
+                    display(first);
+                    break;
+            case 2: display(first);
+                    break;
+            case 3: exit(0);
+            default : printf("\nincorrect choice"); continue;
+            
+        
+        }
+        
+    }
+}
