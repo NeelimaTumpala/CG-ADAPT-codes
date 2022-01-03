@@ -1,0 +1,35 @@
+//compiled and executed
+#include<stdio.h>
+int binary_search(int item, int n, int a[])
+{
+    int low, mid, high;
+    for(low=0,high=n-1;low<=high;)
+    {
+        mid=(low+high)/2;
+        if(item == a[mid]) return mid+1;
+        else if(item<a[mid])
+            high = mid-1;
+        else
+            low = mid +1;
+    }
+ 
+}
+
+int main()
+{
+    int i, n,item,position, a[20];
+    printf("enter the no of elements in the array:\n");
+    scanf("%d",&n);
+    printf("enter the key element to be searched: \n");
+    scanf("%d",&item);
+    printf("enter the array values: ");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    position = binary_search(item,n,a);
+    if(position == 0)
+        printf("search unsuccessful\n");
+    else
+        printf("the key element %d found at location %d",item,position);
+}
