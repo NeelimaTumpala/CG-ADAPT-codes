@@ -1,0 +1,51 @@
+//compiled and executed
+//sorting with characters
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int cmpfunc(const void *a,const void *b)
+{
+    return(*(char*)a - *(char*)b);
+}
+
+int main()
+{
+    int i;
+    int char_array[] = {'Z','K','P','A','Q'};
+    printf("\narray before sorting");
+    for(i=0;i<5;i++)
+        printf("%c\t",char_array[i]);
+    qsort(char_array,5,sizeof(char),cmpfunc);
+    
+    printf("\narray after sorting");
+    for(i=0;i<5;i++)
+        printf("%c\t",char_array[i]);
+
+}
+
+
+//sorting with integers
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int cmpfunc(const void *a,const void *b)
+{
+    return(*(int*)a - *(int*)b);
+}
+
+int main()
+{
+    int i;
+    int int_array[] = {'Z','K','P','A','Q'};
+    printf("\narray before sorting");
+    for(i=0;i<5;i++)
+        printf("%d\t",int_array[i]);
+    qsort(int_array,5,sizeof(int),cmpfunc);
+    
+    printf("\narray after sorting");
+    for(i=0;i<5;i++)
+        printf("%d\t",int_array[i]);
+
+}
