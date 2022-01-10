@@ -1,0 +1,119 @@
+program 1:
+
+public class Main
+{
+	public static void main(String[] args) {
+		// unary : - +
+		//binary: + - * / %
+		//ternary: ? :
+		//relational: < <= > >= == !=
+		//logical and or
+	    int n1,n2,result;
+	    n1=10;
+	    n2=-5;
+	    int x= -n2;
+	    System.out.println("x = "  + x);
+	    
+	}
+}
+
+
+program 2:
+
+public class Main
+{
+	public static void main(String[] args) {
+		// unary : - +
+		//binary: + - * / %
+		//ternary: ? :
+		//relational: < <= > >= == !=
+		//logical and or
+	    int n1,n2,result;
+	    n1=10;
+	    n2=-5;
+	    
+	    result=n1+n2;
+	    System.out.println("result ="+result);
+	    
+	    result=n1-n2;
+	    System.out.println("result ="+result);
+	    
+	    result=n1*n2;
+	    System.out.println("result ="+result);
+	    
+	    result=n1/n2;
+	    System.out.println("result ="+result);
+	    
+	    result=n1%n2;
+	    System.out.println("result ="+result);
+      
+	    //short ckt operators: += -= *= /= %=
+	    //a+=d --> a=a+b
+	    
+	    n1+=10;
+	    System.out.println("n1="+n1);
+	    n1-=10;
+	    System.out.println("n1="+n1);
+	    n1%=4;
+	    System.out.println("n1="+n1);
+	    
+	    //expr1 ? expr2 : expr3;
+	    
+	    System.out.println(n1>5 ? "greater than 5": "Not greater than 5");
+	    n2 =n1 >5 ? 100: 1000;
+	    System.out.println("n1<n2 = " +(n1 < n2));
+	    System.out.println("n1<=n2 = " +(n1 <= n2));
+	    System.out.println("n1>n2 = " +(n1 > n2));
+	    System.out.println("n1>=n2 = " +(n1 >= n2));
+	    System.out.println("n1==n2 = " +(n1 == n2));
+	    System.out.println("n1!=n2 = " +(n1 != n2));
+      
+	}
+}
+
+# operation in bitwise operator
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		int num1, num2;
+		num1=65;
+		System.out.println(num1 << 1);//left shift 1 bit
+	
+	    
+	}
+}
+
+
+program :
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		int num1, num2;
+		num1=65;
+		num2=97;
+		
+		System.out.println(num1 & num2 );
+	    System.out.println(num1 | num2 );
+
+	    
+	}
+}
+
+
+program :
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		short num1 =65;
+		System.out.println(num1);//
+	    System.out.println(~num1);// 2's compliment
+
+	    
+	}
+}
