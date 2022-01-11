@@ -1,0 +1,40 @@
+progarm 1:
+public class Main
+{
+	public static void main(String[] args) {
+		 int num1,num2;
+		 
+		 num1=120;
+		 num2=300;
+		 
+		 if(num1>num2){
+		    System.out.println("num1 is bigger than num2");
+		 }
+		 else{
+		     System.out.println("num2 is bigger than num1");
+		 }
+		 System.out.println("end of program");
+	}
+}
+
+
+program 2:
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		 int year=1974;
+		 if((year%400 ==0 )|| (year%4==0 && year%4!=0))
+		 {
+		     System.out.println("year = "+year+" is a leap year");
+		 }
+		 else
+		 {
+		     System.out.println("year = "+year+" is not a leap year");
+		 }
+	}
+}
+
+
+program 3:
