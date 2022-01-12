@@ -1,0 +1,58 @@
+progarm :
+
+import java.util.Arrays;
+public class Main
+{
+    
+	public static void main(String[] args) {
+	    int[] nums = {12,30,499,55};
+	    
+	    System.out.println("nums = "+Arrays.toString(nums));
+	    System.out.println("nums contain "+ nums.length+" integers.");
+	    
+	}
+}
+
+program :
+
+import java.util.Arrays;
+public class Main
+{
+    
+	public static void main(String[] args) {
+	    int[] nums = new int[5];
+	    
+	    nums = new int[]{20, 40, 505, 66};
+	    
+	    int[] tmp =nums;
+	    tmp[2] = 999;
+	    
+	    System.out.println("nums = "+Arrays.toString(nums));
+	    System.out.println("nums contain "+ nums.length+" integers.");
+	    
+	}
+}
+
+
+program :
+
+import java.util.Arrays;
+public class Main
+{
+    
+	public static void main(String[] args) {
+	    int[] nums = new int[5];
+	    
+	    nums = new int[]{20, 40, 505, 66};
+	    System.out.println("Array contents: ");
+	    for(int ii=0; ii< nums.length; ii++){
+	        System.out.println(nums[ii]);
+	    }
+	    
+	    
+	}
+}
+
+
+program :
+
