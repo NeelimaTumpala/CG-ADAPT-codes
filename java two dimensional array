@@ -1,0 +1,80 @@
+program :
+
+import java.util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+		int[][] nums;
+		
+		nums = new int[3][];
+		nums[0]= new int[]{29,39,56,21};
+		nums[1]= new int[6];
+		nums[2]= new int[]{100,200};
+		
+		
+		for(int i=0; i<nums.length; i++){
+		    System.out.println(Arrays.toString(nums[i]));
+		}
+	}
+}
+
+
+program :
+
+import java.util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+		int[][] nums;
+		
+		nums = new int[3][];
+		nums[0]= new int[]{29,39,56,21};
+		nums[1]= new int[6];
+		nums[2]= new int[]{100,200};
+		
+		
+		for(int i=0; i<nums.length; i++){
+		    int[] tmp = nums[i];
+		    System.out.print("{");
+		    for(int j=0; j<tmp.length-1; j++){
+		        System.out.print(tmp[j]+", ");
+		    }
+		    System.out.print(tmp[tmp.length-1]);
+		    System.out.print("}");
+		    System.out.print("\n");
+		    
+		    
+		}
+	}
+}
+
+
+program :
+
+import java.util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+		int[][] nums = {
+		    {100,200,300},
+		    {423,45,22,67,43,45},
+		    {244,576,786},
+		};
+		
+	
+		
+		
+		for(int i=0; i<nums.length; i++){
+		    int[] tmp = nums[i];
+		    System.out.print("{");
+		    for(int j=0; j<tmp.length-1; j++){
+		        System.out.print(tmp[j]+", ");
+		    }
+		    System.out.print(tmp[tmp.length-1]);
+		    System.out.print("}");
+		    System.out.print("\n");
+		    
+		    
+		}
+	}
+}
