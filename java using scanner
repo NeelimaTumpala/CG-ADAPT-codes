@@ -1,0 +1,90 @@
+program :
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		if(scanner.hasNextInt()){
+		int num = scanner.nextInt();
+		
+		System.out.println("You entered: "+num);
+		}
+		else{
+		    System.out.println("You entered supposed to enter an integer.");
+		}
+	}
+}
+
+
+//keyboardUtil program
+
+import java.util.Scanner;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+public class KeyboardUtil{
+    private KeyboardUtil(){
+        
+    }
+    public static int getInt(String message){
+        System.out.print(message);
+        Scanner scanner.nextInt();
+        return scanner.nextInt();
+        
+    }
+    
+    public static double getDouble(String message){
+        System.out.print(message);
+        Scanner scanner.nextDouble();
+        return scanner.nextDouble();
+        
+    }
+    
+    public static String getString(String message){
+        System.out.print(message);
+        Scanner scanner.nextString();
+        return scanner.nextString();
+        
+    }
+    
+    public static Date getISODate(String message){
+        String pattern = "yyyy-MM-dd";
+        SimpleDtaeFormat sdf = new SimpleDateFormat(pattern);
+        System.out.print(message);
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        try{
+            return sdf.parse(input);
+            
+        }catch (ParseException e){
+            return null;
+            
+        }
+    }
+}
+
+//program :
+
+import java.util.Date;
+import co.vinod.util.KeyboardUtil;
+public class Progarm01{
+    public static void main(String[] args){
+        String name;
+        int age;
+        double height;
+        date dob;
+        
+        name = KeyboardUtil.getString("Enter you name: ");
+        age = KeyboardUtil.getInt("Enter your age: ");
+        height = KeyboardUtil.getDouble("Enter your height");
+        dob = KeyboardUtil.getISOdate("Enter your date of birth in yy-dd-mm format");
+        
+        System.out.println("Name = "+name);
+        System.out.println("Age ="+age+" years");
+        System.out.println("Height "+height);
+        System.out.println("Born on "+dob);
+        
+    }
+}
