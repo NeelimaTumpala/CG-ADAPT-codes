@@ -1,0 +1,73 @@
+progarm test 1:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+import java.util.Arrays;
+
+
+public class Source {
+	public static void main(String args[]) {
+        Scanner scan = new Scanner(System.in);
+        String lang[] = new String[5];
+        for (int i = 0; i < 5; i++) {
+         lang[i] = scan.nextLine();
+        }
+        System.out.println();
+        Arrays.sort(lang);
+        for (int i = 4; i >= 0; i--) {
+         System.out.println(lang[i]);
+        }
+        
+
+	
+	}
+}
+
+program test 2:
+
+DESCRIPTION
+Write a program to get the input as String and pass as input to switch case to
+display the Products with respect to category also display "No Products Available" when the category not found.
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+import java.util.Scanner;
+public class Source 
+{
+    static String[] mobile= {"Samsung S8","One Plus 8","Sony Experia"};
+	static String[] tv= {"VU 55 Inches","Sony TV","Samsung Tv"};
+	static String[] electronics= {"Speakers","DSLR Cameras","Security Cameras"};
+	
+    
+    public static void main(String args[] ) throws Exception {
+	
+	
+
+	
+	    Scanner sc= new Scanner(System.in); 
+	    String str= sc.nextLine();//read string
+	    switch(str){
+	    case "mobile":
+	        System.out.println("Samsung S8\nOne Plus 8\nSony Experia");
+	        break;
+	    case "tv":
+	        System.out.println("VU 55 Inches\nSony TV\nSamsung Tv");
+	        break;
+	    case "electronics":
+	        System.out.println("Speakers\nDSLR Cameras\nSecurity Cameras");
+	        break;
+	    default:
+	        System.out.println("No Products Available");
+	        
+	}
+		/* Enter your code here. Read input from STDIN. Print output to STDOUT */
+	}
+}
