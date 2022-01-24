@@ -73,7 +73,7 @@ public class Source
 }
 
 
-program :
+program 4 sprint 1 :
 
 descrption:
 
@@ -151,9 +151,9 @@ import java.util.regex.*;
 // otherwise solution won't be accepted
 public class Source {
 
-    String[][] productDetails;
+    static String productDetails[][]=new String[5][3];
   
-  String customerDetails[][]=new String[5][3];
+  
     Source()
 	{
     	productDetails[0][0]="20000";
@@ -177,9 +177,9 @@ public class Source {
     	productDetails[4][2]="Nokia";
 	  }
 
+
 	  public static void main(String args[] ) throws Exception {
-		  /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-		  for(i=0;i<5;i++)
+		  for(int i=0;i<5;i++)
 		  {
 		      if(productDetails[i][1]==new String[5][3]){
 		          System.out.println("%s\n%s\n%s",productDetails[i][0],productDetails[i][1],productDetails[i][2]);
@@ -190,4 +190,55 @@ public class Source {
 		  }
 		  
 	  
+}
+}
+
+program 5 sprint 1:
+
+status : partially accepted 33.33
+
+description :
+
+Write a program to get the input as prodcut brand and search the product in a given array. this program should print
+"No Record Found" if the brand is not available in the given array.
+
+code:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+// Class name should be "Source",
+// otherwise solution won't be accepted
+public class Source {
+    static String productDetails[][]=new String[5][3];
+    Source()
+	{
+		productDetails[0][0]="20000";
+        productDetails[0][1]="Motorala-Z";
+        productDetails[0][2]="Motorola";
+	
+        productDetails[1][0]="10600";
+    	productDetails[1][1]="SamsungA21";
+    	productDetails[1][2]="Samsung";
+	
+        productDetails[2][0]="40000";
+    	productDetails[2][1]="Iphone7";
+        productDetails[2][2]="Apple";
+	
+        productDetails[3][0]="12400";
+    	productDetails[3][1]="Nokia8.1";
+    	productDetails[3][2]="Nokia";
+	
+        productDetails[4][0]="10500";
+        productDetails[4][1]="Nokia6.1";
+    	productDetails[4][2]="Nokia";
+	}
+  
+	public static void main(String args[] ) throws Exception {
+		/* Enter your code here. Read input from STDIN. Print output to STDOUT */
+		System.out.println("No Record Found");
+	}
 }
